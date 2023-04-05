@@ -2,7 +2,7 @@
 This is a repository for my Marlin 2.0.x config files for the Wanhao D6+ (Bondtech &amp; Microswiss)
 
 - Merge up to Marlin 2.12
-Changes to default: 
+Changes to default - Config.h: 
 - #define STRING_CONFIG_H_AUTHOR "K41C"
 - #define MOTHERBOARD BOARD_ULTIMAIN_2
 - #define CUSTOM_MACHINE_NAME "Wanhao D6+BM"
@@ -10,9 +10,6 @@ Changes to default:
 - #define PSU_NAME "Power Supply"
 - #define PS_ON_PIN 24 // Wanhao
 - #define TEMP_SENSOR_0 20
-- #define TEMP_SENSOR_BED 1
-- #define HAS_E_TEMP_SENSOR 1
-- #define TEMP_SENSOR_CHAMBER 1
 - #define BED_MAXTEMP      115
 - //#define PIDTEMP 
 - #define MPCTEMP
@@ -65,6 +62,33 @@ Changes to default:
 - #define OLED_PANEL_TINYBOY2
 - #define LCD_RESET_PIN 5
 - #define PCA9632
+
+Changes to default - Config_adv.h: 
+- #define THERMAL_PROTECTION_BED_PERIOD 70
+- #define WATCH_BED_TEMP_PERIOD                70
+- #define FAN_KICKSTART_TIME  100
+- #define CASE_LIGHT_ENABLE
+- #define CASE_LIGHT_PIN 8
+- #define CASE_LIGHT_DEFAULT_BRIGHTNESS 255
+- #define CASE_LIGHT_MENU  
+- #define QUICK_HOME 
+- #define ADAPTIVE_STEP_SMOOTHING
+- #define MOTOR_CURRENT_PWM_RANGE 2782
+- #define PWM_MOTOR_CURRENT { 1200, 1200, 1000 } 
+- #define LCD_INFO_MENU
+-   #define USE_SMALL_INFOFONT
+-   #define LCD_SERIAL_PORT 3
+-   #define BABYSTEPPING
+-     #define DOUBLECLICK_FOR_Z_BABYSTEPPING
+-     #define LIN_ADVANCE
+-     #define EXPERIMENTAL_SCURV
+-     #define MINIMUM_STEPPER_POST_DIR_DELAY 200
+- #define MINIMUM_STEPPER_PRE_DIR_DELAY 200
+- #define MINIMUM_STEPPER_PULSE 1
+- #define MAXIMUM_STEPPER_RATE 500000
+- #define ADVANCED_PAUSE_FEATURE
+
+
 
 Wanhao D6 BMG Upgrade
 https://www.bondtech.se/product/wanhao-d6-kit/
