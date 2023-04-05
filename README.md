@@ -2,6 +2,61 @@
 This is a repository for my Marlin 2.0.x config files for the Wanhao D6+ (Bondtech &amp; Microswiss)
 
 - Merge up to Marlin 2.12
+Changes to default: 
+- #define STRING_CONFIG_H_AUTHOR "K41C"
+- #define MOTHERBOARD BOARD_ULTIMAIN_2
+- #define CUSTOM_MACHINE_NAME "Wanhao D6+BM"
+- #define PSU_CONTROL
+- #define PSU_NAME "Power Supply"
+- #define PS_ON_PIN 24 // Wanhao
+- #define TEMP_SENSOR_0 20
+- #define TEMP_SENSOR_BED 1
+- #define HAS_E_TEMP_SENSOR 1
+- #define TEMP_SENSOR_CHAMBER 1
+- #define BED_MAXTEMP      115
+- //#define PIDTEMP 
+- #define MPCTEMP
+- #define PIDTEMPBED
+- //#define THERMAL_PROTECTION_CHAMBER
+- //#define THERMAL_PROTECTION_COOLER
+- #define ENDSTOPPULLUP_XMIN
+- #define ENDSTOPPULLUP_YMIN
+- #define ENDSTOPPULLUP_XMAX
+- #define ENDSTOPPULLUP_YMAX
+- #define ENDSTOPPULLUP_ZMAX
+- #define X_MIN_ENDSTOP_INVERTING true
+- #define Y_MIN_ENDSTOP_INVERTING true
+- #define Z_MIN_ENDSTOP_INVERTING true
+- #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.0395, 80.0395, 400.48, 415 }
+- #define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 500 }
+- #define DEFAULT_ACCELERATION          1500
+- #define DEFAULT_RETRACT_ACCELERATION  1500
+- #define DEFAULT_EJERK    1.0
+- #define S_CURVE_ACCELERATION
+- //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+- #define PROBE_MANUALLY
+- #define INVERT_X_DIR true
+- #define INVERT_Y_DIR false
+- #define INVERT_Z_DIR true
+- #define INVERT_E0_DIR true
+- #define HOME_AFTER_DEACTIVATE  
+- #define Y_BED_SIZE 183 //Important Bondtech
+- #define Z_MAX_POS 185
+- #define MESH_BED_LEVELING //??
+- #define LEVEL_BED_CORNERS
+- #define XY_SKEW_FACTOR 0.0
+- #define XZ_SKEW_FACTOR 0.0
+- #define YZ_SKEW_FACTOR 0.0
+- #define PREHEAT_1_TEMP_HOTEND 190
+- #define PREHEAT_2_LABEL       "PETG"
+- #define PREHEAT_2_TEMP_HOTEND 230
+- #define PREHEAT_2_TEMP_BED    70
+- #define NOZZLE_PARK_FEATURE
+- #define SDSUPPORT
+- #define SLIM_LCD_MENUS //??
+- #define ENCODER_PULSES_PER_STEP 2
+- #define ENCODER_STEPS_PER_MENU_ITEM 1
+- #define REVERSE_ENCODER_DIRECTION
 
 Wanhao D6 BMG Upgrade
 https://www.bondtech.se/product/wanhao-d6-kit/
