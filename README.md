@@ -57,6 +57,14 @@ Changes to default:
 - #define ENCODER_PULSES_PER_STEP 2
 - #define ENCODER_STEPS_PER_MENU_ITEM 1
 - #define REVERSE_ENCODER_DIRECTION
+- #define ENCODER_NOISE_FILTER
+- #define INDIVIDUAL_AXIS_HOMING_MENU
+- #define SPEAKER
+- #define LCD_FEEDBACK_FREQUENCY_DURATION_MS 5
+- #define LCD_FEEDBACK_FREQUENCY_HZ 5000
+- #define OLED_PANEL_TINYBOY2
+- #define LCD_RESET_PIN 5
+- #define PCA9632
 
 Wanhao D6 BMG Upgrade
 https://www.bondtech.se/product/wanhao-d6-kit/
